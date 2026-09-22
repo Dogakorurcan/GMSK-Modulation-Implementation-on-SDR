@@ -1,7 +1,6 @@
 # GMSK-Modulation-Implementation-on-SDR
-# GMSK Transmitter / Receiver over USRP B200
 
-A MATLAB implementation of a Gaussian Minimum Shift Keying (GMSK) transceiver over two USRP B200 radios. Unlike a toolbox-based version, the modulator and demodulator are built from scratch: a Gaussian pulse-shaping filter derived from the Q-function, manual phase integration for modulation, and a differential (non-coherent) phase detector for demodulation.
+A MATLAB implementation of a Gaussian Minimum Shift Keying (GMSK) transceiver over two SDR. The modulator and demodulator are built from scratch: a Gaussian pulse-shaping filter derived from the Q-function, manual phase integration for modulation, and a differential (non-coherent) phase detector for demodulation.
 
 ## Files
 
@@ -29,6 +28,6 @@ Sync (64 bits) → Preamble (63 bits) → Pilot (32 bits) → Data (500 bits) �
 2. Run `GMSK_tx.m`, press Enter to start streaming.
 3. Run `GMSK_rx.m` on the second radio — it reports CFO, shows constellation/eye-diagram plots, and prints the final BER once a frame is decoded.
 
-## License
 
-Add a license (MIT is a common choice for portfolio projects) before publishing.
+
+
